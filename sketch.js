@@ -121,6 +121,18 @@ function keyPressed() {
     }
 }
 
+// New function to handle touch input for mobile devices
+function touchStarted() {
+    // Check if the touch is within the canvas area
+    if (mouseX >= 0 && mouseX <= width && mouseY >= 0 && mouseY <= height) {
+        if (!gameOver) { // Only allow jumping if the game is not over
+            dinosaur.jump(); // Call the dinosaur's jump method
+        }
+    }
+    // Prevent default touch behavior (like scrolling)
+    return false;
+}
+
 // Function to reset all game elements and state
 function resetGame() {
     score = 0; // Reset score
