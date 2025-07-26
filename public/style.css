@@ -1,0 +1,27 @@
+/* Apply a basic reset and set font */
+body {
+    margin: 0;
+    overflow: hidden; /* Prevent scrollbars */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Full viewport height */
+    background-color: #282c34; /* Dark background for contrast */
+    font-family: 'Press Start 2P', cursive; /* A pixelated font, if available */
+    /* Fallback for pixel font */
+    font-family: monospace;
+}
+
+/* Style the p5.js canvas */
+canvas {
+    display: block; /* Remove extra space below canvas */
+    border: 4px solid #fff; /* White border around the game */
+    border-radius: 8px; /* Slightly rounded corners for the border */
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.5); /* Glowing effect */
+    background-color: #87ceeb; /* Sky blue background for the game world */
+    max-width: 90vw; /* Responsive width */
+    max-height: 90vh; /* Responsive height */
+}
+
+/* Import a pixel font if desired - add this to the head of index.html or here */
+@import url('[https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap](https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap)');
